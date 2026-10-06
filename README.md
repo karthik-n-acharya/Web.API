@@ -93,6 +93,30 @@ Start the compiled application:
 npm start
 ```
 
+## Deploy to Render
+
+This repository includes a `render.yaml` Blueprint for a Node.js web service.
+In Render, create a new **Blueprint** and connect this GitHub repository. The
+Blueprint builds with `npm ci && npm run build`, starts with `npm start`, and
+uses `GET /api/health` as its health check. The server listens on Render's
+assigned `PORT` and binds to `0.0.0.0`.
+
+During Blueprint setup, provide `GEMINI_API_KEY` in Render's environment
+configuration. Keep it as a secret; do not put it in the repository or
+frontend. The Blueprint sets `NODE_ENV=production`,
+`FRONTEND_URL=https://karthik-n-acharya.github.io`, and the default
+`GEMINI_MODEL`. Update `FRONTEND_URL` in Render if the frontend origin changes.
+Swagger UI is available only in non-production environments.
+
+After deployment, use the Render service URL as the frontend API base URL:
+
+```text
+https://<your-render-service>.onrender.com
+```
+
+The endpoints are `GET https://<your-render-service>.onrender.com/api/health`
+and `POST https://<your-render-service>.onrender.com/api/chat`.
+
 ## Quality commands
 
 ```bash

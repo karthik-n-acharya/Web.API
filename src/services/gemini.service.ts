@@ -1,4 +1,4 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenAI, ThinkingLevel } from "@google/genai";
 import { env } from "../config/env.js";
 import { AppError } from "../middleware/error.middleware.js";
 import { createPortfolioPrompt } from "../prompts/portfolio.prompt.js";
@@ -12,6 +12,11 @@ export async function generatePortfolioAnswer(
     const response = await gemini.models.generateContent({
       model: env.GEMINI_MODEL,
       contents: createPortfolioPrompt(message),
+      config: {
+        thinkingConfig: {
+          thinkingLevel: ThinkingLevel.LOW,
+        },
+      },
     });
 
     const answer = response.text?.trim();

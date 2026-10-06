@@ -23,14 +23,13 @@ export const portfolioContext = {
         location: "Karnataka, India",
         clients: ["LoanDepot"],
         responsibilities: [
-          "Developed custom UI controls and reusable components using React, TypeScript, Fluent UI, and Xrm APIs; developed features for customer communication, notifications, calling/messaging workflows, dashboards, forms, and CRM data interactions.",
-          "Packaged and deployed PCF controls as Power Platform solutions for model-driven applications, managing Dataverse configurations and supporting deployments across multiple environments.",
-          "Developed and maintained Angular applications across versions 12–21, using Nx monorepo, TypeScript, RxJS, Angular Material, AG Grid, NgRx, Signals, SCSS, Bootstrap, and Tailwind CSS; migrated legacy applications to modern Angular architecture and created reusable libraries, components, services, forms, filters, and shared UI functionality.",
-          "Implemented multi-application Angular/Nx solutions by migrating multiple standalone applications into a unified monorepo with shared feature, UI, data-access, service, utility, and theme libraries; implemented clean dependency boundaries, reusable design-system components, role-based routing, dynamic filtering, server-side pagination/sorting, grid functionality, file uploads, and Excel export.",
-          "Implemented modern Angular SSR, Incremental Hydration, Signals, computed/linkedSignal, httpResource/rxResource, OnPush change detection, event replay, and HTTP transfer caching, along with CMS-driven dynamic routing and reusable component registries to improve application performance, scalability, maintainability, and Core Web Vitals.",
-          "Developed enterprise backend services using .NET 8, C#, ASP.NET Core, and strongly typed DTOs; implemented CMS and third-party API integrations with authentication, pagination, filtering, caching, retry policies, timeout handling, structured logging, and robust error/fallback handling.",
-          "Leveraged AI-assisted development tools including Devin and Windsurf for code generation, feature development, refactoring, debugging, testing, and documentation across React, Angular, and .NET/C# applications. Reviewed and validated generated code.",
-          "Migrated multiple consumer-facing sites from legacy Azure CDN to Azure Front Door Premium, implementing reusable Bicep templates for Front Door endpoints, origin groups, routes, custom domains, and multi-environment deployments across development, QA, staging, and production.",
+          "Built React, TypeScript, Fluent UI, and Xrm API controls and CRM workflows for customer communications, notifications, calls/messages, dashboards, and forms.",
+          "Packaged PCF controls as Power Platform solutions and managed Dataverse configuration and deployments across environments.",
+          "Modernized Angular 12–21 applications in Nx monorepos, building shared libraries and reusable UI, forms, filters, grids, uploads, and exports.",
+          "Implemented Angular SSR, Incremental Hydration, Signals, and CMS-driven routing to improve performance and Core Web Vitals.",
+          "Built .NET 8 and ASP.NET Core services and CMS/third-party integrations with authentication, pagination, caching, retries, timeouts, and structured logging.",
+          "Migrated sites from Azure CDN to Azure Front Door Premium using reusable Bicep templates for multi-environment deployments.",
+          "Used Devin and Windsurf for development, refactoring, debugging, tests, and documentation; reviewed and validated generated code.",
         ],
       },
       {
@@ -40,12 +39,10 @@ export const portfolioContext = {
         location: "Karnataka, India",
         clients: ["White Space Health", "HIMSS", "Virtual Card - RPM"],
         responsibilities: [
-          "Implemented state management using Redux, Recoil, and MobX to manage complex application state, asynchronous workflows, and data synchronization across reusable React components.",
-          "Built responsive and user-friendly interfaces using MUI, implementing reusable UI components, forms, layouts, validations, and consistent styling across application modules.",
-          "Integrated Shopify functionality into React applications, working with frontend components and application workflows to deliver seamless e-commerce experiences.",
-          "Implemented real-time communication and collaboration features using Amazon Chime SDK JS, integrating audio/video communication capabilities into React-based applications.",
-          "Integrated AWS Amplify for frontend cloud capabilities and application services, supporting secure and scalable React application development.",
-          "Developed and maintained Jest unit tests for React components, state management, utilities, and application logic to improve code quality, reliability, and maintainability.",
+          "Managed React application state and asynchronous workflows with Redux, Recoil, and MobX.",
+          "Built responsive interfaces and reusable forms and components with MUI.",
+          "Integrated Shopify, Amazon Chime SDK JS, and AWS Amplify into React applications.",
+          "Created Jest tests for components, state management, utilities, and application logic.",
         ],
       },
       {
@@ -60,15 +57,11 @@ export const portfolioContext = {
           "GoodResearch",
         ],
         responsibilities: [
-          "Developed and integrated REST API services using Java and Dropwizard to support frontend user interface interactions, implementing request handling, business logic, data processing, validation, and API response management.",
-          "Implemented complex business logic and data-driven workflows based on client requirements and user inputs, using Java, Dropwizard, JavaScript, and TypeScript.",
-          "Developed interactive and responsive web applications using React, Redux, JavaScript, and TypeScript, implementing reusable components, centralized state management, API integrations, and dynamic UI workflows.",
-          "Built data visualizations and interactive graphical elements using SVG.js, integrating dynamic client data into responsive visual interfaces and user interactions.",
-          "Collaborated with team members on the design, development, integration, debugging, and delivery of complex web applications, providing technical guidance and ensuring consistency with established coding standards.",
-          "Worked directly with clients and stakeholders to understand requirements, clarify technical dependencies, analyze complexity, and provide development estimates and implementation approaches.",
-          "Delivered assigned features and project milestones within agreed timelines without client escalations, while maintaining code quality and functionality.",
-          "Rebuilt and migrated an existing iOS application into a web-based application using React, Redux, and TypeScript, translating application workflows and business requirements into reusable web components and responsive user interfaces.",
-          "Ensured coding standards, reusable component practices, maintainable architecture, and development best practices across React frontend and Java/Dropwizard backend implementations.",
+          "Built Java and Dropwizard REST APIs, business logic, validation, and data-driven workflows.",
+          "Developed responsive React applications with Redux, reusable components, and API integrations.",
+          "Created interactive data visualizations with SVG.js and migrated an iOS app to a React web application.",
+          "Collaborated with clients and teams on requirements, estimates, technical guidance, and delivery.",
+          "Maintained coding standards and delivered milestones while debugging and integrating application features.",
         ],
       },
     ],
@@ -121,18 +114,8 @@ export const portfolioContext = {
       "Bootstrap",
       "Sass/SCSS",
       "Fluent UI",
-      "Angular Material",
-      "AG Grid",
       "RxJS",
-      "NgRx",
-      "Angular Signals",
       "Nx monorepo",
-      "MUI",
-      "Recoil",
-      "MobX",
-      "Tailwind CSS",
-      "SSR",
-      "Incremental Hydration",
     ],
     backendDevelopment: [
       ".NET 8",
@@ -142,16 +125,11 @@ export const portfolioContext = {
       "Dropwizard",
       "REST APIs",
       "GraphQL",
-      "Strongly typed DTOs",
-      "MongoDB",
-      "Firebase",
     ],
     crmAndPlatforms: [
       "Microsoft Dynamics 365",
-      "Power Platform",
       "Power Platform CLI",
       "PCF controls",
-      "Dataverse",
       "Xrm APIs",
       "Shopify",
       "AWS Amplify",
@@ -186,130 +164,7 @@ export const portfolioContext = {
     ],
   },
 
-  projects: [
-    {
-      name: "Mortgage Customer Communication Platform",
-      description:
-        "Developed React-based Dynamics 365/CRM functionality for a mortgage client, supporting customer communications and CRM workflows.",
-      category: "enterprise web application",
-      technologies: [
-        "React",
-        "TypeScript",
-        "Fluent UI",
-        "Microsoft Dynamics 365",
-        "Xrm APIs",
-        "Power Platform",
-        "Dataverse",
-      ],
-      details: {
-        features: [
-          "Customer communication and notification workflows",
-          "Calling and messaging functionality",
-          "Dashboards and forms",
-          "CRM data interactions",
-        ],
-      },
-    },
-    {
-      name: "Dynamics 365 CRM Integration with PCF Controls",
-      description:
-        "Built reusable Power Apps Component Framework (PCF) controls and packaged them as Power Platform solutions for Dynamics 365 model-driven applications.",
-      category: "CRM integration",
-      technologies: [
-        "React",
-        "TypeScript",
-        "Fluent UI",
-        "Xrm APIs",
-        "PCF",
-        "Power Platform CLI",
-        "Dataverse",
-        "Microsoft Dynamics 365",
-      ],
-      details: {
-        features: [
-          "Reusable custom UI controls integrated with CRM data",
-          "Power Platform solution packaging",
-          "Dataverse configuration management",
-          "Deployment support across multiple environments",
-        ],
-      },
-    },
-    {
-      name: "Angular Static Websites",
-      description:
-        "Developed static websites using Angular and shared UI frameworks, and contributed to CMS-driven website functionality.",
-      category: "web",
-      technologies: [
-        "Angular 12",
-        "Angular 14",
-        "Angular Material",
-        "Bootstrap",
-        "Sass/SCSS",
-        "CMS integration",
-      ],
-      details: {
-        features: [
-          "Responsive static page development",
-          "Reusable Angular components and shared UI",
-          "CMS-driven content integration",
-        ],
-      },
-    },
-    {
-      name: "E-Commerce Platform",
-      description:
-        "A full-featured e-commerce platform with product catalog, shopping cart, and payment integration.",
-      category: "web",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Redux"],
-    },
-    {
-      name: "Finance Dashboard",
-      description:
-        "An interactive dashboard for tracking personal finances, investments, and budget planning.",
-      category: "web",
-      technologies: [
-        "React",
-        "TypeScript",
-        "D3.js",
-        "Firebase",
-        "Tailwind CSS",
-      ],
-    },
-    {
-      name: "Task Management App",
-      description:
-        "A collaborative task management application with real-time updates and team collaboration features.",
-      category: "web",
-      technologies: ["React", "Socket.io", "Express", "MongoDB", "Redux"],
-    },
-    {
-      name: "Weather Forecast App",
-      description:
-        "A mobile app that provides accurate weather forecasts with visualizations and notifications.",
-      category: "mobile",
-      technologies: ["React Native", "Redux", "Weather API", "Geolocation"],
-    },
-    {
-      name: "Portfolio Website",
-      description:
-        "A personal portfolio website showcasing projects, skills, and professional experience.",
-      category: "web",
-      technologies: ["React", "Three.js", "GSAP", "Tailwind CSS"],
-    },
-    {
-      name: "Social Media Dashboard",
-      description:
-        "A dashboard for managing multiple social media accounts and tracking engagement metrics.",
-      category: "web",
-      technologies: [
-        "React",
-        "Node.js",
-        "Express",
-        "Social Media APIs",
-        "Chart.js",
-      ],
-    },
-  ],
+  projects: [],
 
   certifications: [],
 };

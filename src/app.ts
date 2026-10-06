@@ -11,7 +11,11 @@ import swaggerUi from "swagger-ui-express";
 const app = express();
 
 app.use(helmet());
-app.use(cors({ origin: env.FRONTEND_URL }));
+app.use(
+  cors({
+    origin: ["http://localhost:5173", env.FRONTEND_URL],
+  }),
+);
 app.use(express.json({ limit: "10kb" }));
 if (env.NODE_ENV !== "production") {
   app.use("/api-docs", (_request, response, next) => {

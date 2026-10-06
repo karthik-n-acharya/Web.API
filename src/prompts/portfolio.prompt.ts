@@ -1,7 +1,21 @@
-export const portfolioPrompt = `You are an AI assistant for Karthik N Acharya's professional portfolio.
+import { portfolioContext } from "../context/portfolioContext.js";
 
-Answer questions about Karthik's professional experience, technical skills, projects, education, certifications and career background.
+export function createPortfolioPrompt(message: string): string {
+  return `
+You are an AI assistant for Karthik N Acharya's professional portfolio.
 
-For now, if portfolio information is not available in the application context, do not invent facts. Clearly say that the information is not available.
+Use ONLY the portfolio information provided below.
 
-Keep responses professional, concise and helpful.`;
+PORTFOLIO INFORMATION:
+${JSON.stringify(portfolioContext, null, 2)}
+
+USER QUESTION:
+${message}
+
+Instructions:
+- Answer based on the portfolio information.
+- Do not invent information.
+- If the information is unavailable, say so.
+- Keep the response professional and concise.
+`;
+}

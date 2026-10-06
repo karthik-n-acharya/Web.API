@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { env } from "../config/env.js";
 import { AppError } from "../middleware/error.middleware.js";
-import { portfolioPrompt } from "../prompts/portfolio.prompt.js";
+import { createPortfolioPrompt } from "../prompts/portfolio.prompt.js";
 
 const gemini = new GoogleGenAI({ apiKey: env.GEMINI_API_KEY });
 
@@ -11,10 +11,7 @@ export async function generatePortfolioAnswer(
   try {
     const response = await gemini.models.generateContent({
       model: env.GEMINI_MODEL,
-      contents: message,
-      config: {
-        systemInstruction: portfolioPrompt,
-      },
+      contents: createPortfolioPrompt(message),
     });
 
     const answer = response.text?.trim();
